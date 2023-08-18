@@ -1,0 +1,62 @@
+:root {
+    --darkest: #172774;
+    --darker: #FF0075;
+    --lighter: #78fa6f;
+    --lightest: #EEEEEE;
+}
+
+* {
+    font-family: sans-serif
+}
+
+body {
+    background-color: var(--darkest);
+}
+
+h1, h3 {
+    color: var(--lighter);
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--lighter);
+    width: fit-content;
+    padding: 10px 20px;
+    transition: .6s;
+    color: var(--darkest);
+    font-weight: bold;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--darker);
+}
+
+.hide-me {
+    display: none;
+}
+
+.random-card, .random-card-guess {
+    background-color: var(--darker);
+    width: fit-content;
+    padding: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--darkest);
+    margin: auto;
+}
+
+.higher-lower-btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: fit-content;
+}
+
+.higher-lower-btn-div > .btn {
+    margin: 20px 10px;
+}
