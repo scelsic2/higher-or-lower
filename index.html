@@ -4,23 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higher or Lower</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Handjet:wght@200;300&family=Lobster&family=Tilt+Prism&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
     <h1>Higher or Lower?</h1>
-    <h3>Guess the next card</h3>
+
+    <div class="card-div">
+        <div id="random-card" class="card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"></div>
+                <div class="flip-card-back"></div>
+            </div>
+        </div>
+        <div id="random-card-guess" class="card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="flip-card-front-p hide-me">Guess the next card</p>
+                </div>
+                <div class="flip-card-back">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="start-btn" class="btn">Start</div>
-
-    <div class="random-card hide-me"></div>
-    <div class="random-card-guess hide-me"></div>
 
     <div class="higher-lower-btn-wrapper hide-me">
         <div class="higher-lower-btn-div">
             <div id="lower-btn" class="btn">Lower</div>
             <div id="higher-btn" class="btn">Higher</div>
         </div>
+    </div>
+
+    <div class="response-div">
+        <h3 class="response"></h3>
+    </div>
+
+    <div class="play-again hide-me">
+        <div id="play-again-btn" class="btn">Play Again</div>
     </div>
 
     <script src="/assets/js/index.js"></script>
