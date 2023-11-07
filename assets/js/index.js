@@ -80,4 +80,4 @@ function cardReset() {
 startBtn.addEventListener('click', gameStart)
 lowerBtn.addEventListener('click', guessLower)
 higherBtn.addEventListener('click', guessHigher)
-playAgainBtn.addEventListener('click', cardReset)
+playAgainBtn.addEventListener('click', cardReset) 
